@@ -1,0 +1,12 @@
+<div class="listCard">
+  <mat-card *ngFor="let singog of listSingog | async">
+    <p>{{singog.name}}</p>
+    <div fxLayout="row" fxLayoutAlign="space-between end">
+      <p>{{singog.numOfSing}}</p>
+      <p>{{singog.numOfPeople}}</p>
+    </div>
+    <mat-progress-bar mode="determinate" value="{{(singog.numOfSing /singog.numOfPeople) * 100}}"></mat-progress-bar>
+
+  </mat-card>
+ 
+</div>

@@ -1,0 +1,23 @@
+<div class="content" fxLayout="column" fxLayoutAlign="space-around stretch" dir="rtl">
+  <mat-form-field class="with" >
+    <input matInput placeholder="הכנס את שמך" name="name" [(ngModel)]="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="הכנס כתובת אימייל" name="email" [(ngModel)]="email" >
+    <mat-error></mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="הכנס מספר טלפון"  [(ngModel)]="phone">
+    <mat-error></mat-error>
+  </mat-form-field>
+  <mat-form-field class="with">
+    <textarea matInput placeholder="החלטה טובה" [(ngModel)]="msg"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="with">
+    <mat-select placeholder="קבוצה" [(ngModel)]="group">
+      <mat-option *ngFor="let singog of listSingog | async" value="{{singog.name}}">{{singog.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="submit" mat-button (click)="addSing()">לחץ לחתימה</button>
+</div>

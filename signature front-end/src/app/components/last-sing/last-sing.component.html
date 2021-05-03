@@ -1,0 +1,7 @@
+<div class="list">
+  
+  <div class="card" *ngFor="let sing of lastSing | async" >
+    <h1>{{sing.name}}</h1>
+    <h3>{{sing.msg}}</h3>
+  </div>
+  
