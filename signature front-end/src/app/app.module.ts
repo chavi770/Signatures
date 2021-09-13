@@ -22,6 +22,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { HederComponent } from './components/heder/heder.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { ExampleComponent } from './example/example.component';
 
 
 
@@ -42,6 +43,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     ShowGroupsComponent,
     HederComponent,
     ProgressBarComponent,
+    ExampleComponent,
     
   ],
   imports: [
